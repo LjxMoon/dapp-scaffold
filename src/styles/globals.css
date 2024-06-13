@@ -8,11 +8,10 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-image: radial-gradient(
-    circle farthest-side at 50% 100%,rgba(1, 9, 18, 0),
-    rgba(1, 6, 14, 0.6) 36%,
-    rgba(1, 14, 29, 0.6) 55%,
-    rgba(49, 18, 93, 0.4));
+  background-image: url('/img/bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* filter: grayscale(80%); */
 }
 
 a {
@@ -29,3 +28,31 @@ a {
   background-color: #707070;
 }
 
+.wallet-adapter-button {
+  width: auto;
+  box-sizing: content-box;
+  min-width: 154px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 800;
+  border: 6px solid #000;
+  padding: 15px 18px;
+  border-radius: 100px;
+  background-color: #4aaa2a;
+}
+
+.navbar-end .wallet-adapter-button {
+  height: 40px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  border: 4px solid #444;
+  padding: 10px 20px 10px 15px;
+  border-radius: 1000px;
+  background-color: #000;
+}
